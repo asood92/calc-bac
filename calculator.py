@@ -1,7 +1,9 @@
 # File:    calculator.py
 # Date:   9/3/2020
 # Description:
-#   This program calculates the Blood Alcohol Content of a person. The user is prompted to input their age, weight, gender, how many drinks they have had, and how much time has elapsed since they started drinking. Upon input, they are returned an approximate BAC.
+#   This program calculates the Blood Alcohol Content of a person. The user is prompted to input their age, weight, gender, how many drinks they have had, and how much time has elapsed since they started drinking. Upon input, they are returned an approximate BAC.  The formula used for calculation is the Widmark formula:
+# BAC = [Alcohol consumed in grams / (Body weight in grams x r)] x 100.
+# In this formula, “r” is the gender constant: r = 0.55 for females and 0.68 for males.
 
 # Constants for BAC calculation
 MALE_METABOLIC_RATE = 0.68
