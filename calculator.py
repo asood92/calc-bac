@@ -18,7 +18,7 @@ def main():
 
   print("Welcome to the BoozeBot 3000! I'm here to calculate your Blood Alcohol Content. To properly calculate your BAC, I'll need information from you. ")
 
-# Prompt user for gender
+# Prompt user for gender so that the loop can begin
   gender = input("\n Are you male or female? Please enter M for male or F for female, or q to quit: ")
 
   while gender != QUIT:
@@ -26,7 +26,6 @@ def main():
     alcoholConsumed = int(input("\n Enter the number of drinks you've had: "))
     weight = int(input("\n Enter your weight in pounds: "))
     elapsedTime = int(input("\n Enter the number of hours that you have been drinking: "))
-
 
     weight = weight * POUNDS_TO_GRAMS # Convert weight to grams
 
