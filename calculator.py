@@ -1,5 +1,4 @@
 # File:    calculator.py
-# Author:  Amman Sood
 # Date:   9/3/2020
 # Description:
 #   This program calculates the Blood Alcohol Content of a person. The user is prompted to input their age, weight, gender, how many drinks they have had, and how much time has elapsed since they started drinking. Upon input, they are returned an approximate BAC.
