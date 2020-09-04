@@ -41,13 +41,13 @@ def main():
 
     bloodAlcohol = alcoholConsumed / weight # calculate raw BAC
     bloodAlcohol = bloodAlcohol * 100 # convert blood alcohol from raw number to a percentage
-    bloodAlcohol = float(bloodAlcohol - (elapsedTime * RATE_OF_BAC_DECAY)) # account for drop in BAC based on time elapsed
+    bloodAlcohol = bloodAlcohol - (elapsedTime * RATE_OF_BAC_DECAY) # account for drop in BAC based on time elapsed
 
     print("\n Your approximate Blood Alcohol Content is: " + str(bloodAlcohol))
 
     if bloodAlcohol > LEGAL_BAC_LIMIT:
       print("\n You should not drive. \n")
-    elif (bloodAlcohol > 0 ) and (bloodAlcohol< LEGAL_BAC_LIMIT):
+    elif (bloodAlcohol > 0 ) and (bloodAlcohol < LEGAL_BAC_LIMIT):
       print("\n You still shouldn't drive, but it's not illegal. \n")
 
     gender = input("If you'd like to continue, enter the gender of the next person, or enter \"q\" to quit: ") # get input on gender again to continue the loop, or exit the loop and quit
